@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Café Oslo - Contacto</title>
+        <link rel="shortcut icon" href="../imagenes/Icono3.png" type="image/x-icon">
+        <meta name="coder house" content="desarrollo web">
+        <link rel="stylesheet" href="../estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@800&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navegacion">
+                <a href="../index.html"><img class="logo" title="Café Oslo - Home" src="../imagenes/logo.png" alt="logo"></img></a>
+                <i class="fa-sharp fa-solid fa-bars barras"></i>
+                <ul>
+                    <a href="./pasteleria.html"><li>PASTELERÍA</li></a>
+                    <a href="./contacto.html"><li>CONTACTO</li></a>
+                </ul>
+                </nav>
+        </header>
+
+        <main class="contacto">
+            <h1>Contacto</h1>
+                <form class="formulario">
+                    <label class="nombre">Nombre</label><br>
+                    <input class="campo campoNombre" type="text" tabindex="1"><br>
+                    <label class="apellido">Apellido</label><br>
+                    <input class="campo campoApellido" type="text" tabindex="2"><br>
+                    <label class="email">Correo Electrónico</label><br>
+                    <input class="campo campoEmail" type="email" tabindex="3"><br>
+                    <label class="motivo">Motivo</label><br>
+                    <select class="selector" tabindex="4">
+                        <option value="Reserva">Reserva</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="mensaje">Mensaje</option>
+                    </select><br>
+                    <textarea type="text" class="respuesta" placeholder="Escriba aquí su mensaje" tabindex="5"></textarea>
+                    <input type="submit" class="enviar" value="Enviar" tabindex="6">
+                </form>
+
+        </main>
+
+        <footer>
+            <p>Scalabrini Ortiz 558. Ciudad Autónoma de Buenos Aires</p>
+            <p>Teléfono: 1135468976</p>
+        </footer>
+
+    </body>
+</html>
