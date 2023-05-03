@@ -1,482 +1,388 @@
+/* Variables SASS ------------------------------------------ */
 /* Reseteo CSS ---------------------------------------------- */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos Header -------------------------------------------- */
-
-.navegacion {
-    margin: 10px;
-    background-color: #d03b40;
-    display: flex;
-    align-items: center;
-    height: 60px;
+.navbar {
+  background-color: #d03b40 !important;
+  margin: 10px;
 }
 
-.logo {
-    margin-left: 10px;
+.logo img {
+  width: 150px;
+  height: auto;
+  border-radius: 0px;
 }
 
-
-.logo:hover {
-    cursor: pointer;
+#navbarNavAltMarkup {
+  justify-content: right;
 }
 
-.navegacion ul {
-    margin-left: auto;
+.navegacion .secciones {
+  text-align: center;
+}
+.navegacion .secciones .titulo {
+  font-family: "Open Sans Condensed", sans serif;
+  font-size: 24px;
+  color: antiquewhite;
+  justify-content: right;
 }
 
-.navegacion .barras{
-    display: none;
+.hamburguesa {
+  border-radius: 0px;
+  line-height: 0px;
+  border: none;
 }
 
-.navegacion li {
-    display: inline;
-    margin: auto 15px;
-    cursor: pointer;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    color: aliceblue;
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
-a:link,
-a:visited,
-a:active {
-    text-decoration: none;
+#menuBurguer {
+  color: white;
 }
 
-
-/* Estilos Index (Home)-------------------------------------------- */
-
+/* Estilos Home -------------------------------------------- */
 .Home {
-    margin: 10px;
-    display: flex;
-    justify-content: right;
-    background-image: url(./imagenes/Fondo2.jpg);
-    background-size: cover;
-    height: calc(100vh - 150px);
-    overflow: hidden;
+  margin: 10px;
+  display: flex;
+  justify-content: right;
+  background-image: url(./imagenes/Fondo2.jpg);
+  background-size: cover;
+  height: calc(100vh - 210px);
+  overflow: hidden;
 }
-
 .Home h1 {
-    display: block;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 80px;
-    color: bisque;
-    margin-top: 26%;
-    margin-right: 10%;
-    align-self: flex-end;
-
+  display: block;
+  font-family: "Source Serif Pro", serif;
+  font-size: 80px;
+  color: bisque;
+  margin-top: 26%;
+  margin-right: 10%;
+  align-self: flex-end;
 }
 
 /* Estilos Pasteleria ----------------------------------------------*/
-
 .pasteleria {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    background-image: url(imagenes/Fondo1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background-image: url(imagenes/Fondo1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 210px);
 }
-
 .pasteleria h1 {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 10px;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 42px;
-    color: bisque;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Source Serif Pro", serif;
+  font-size: 42px;
+  color: bisque;
 }
-
 .pasteleria h2 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: bisque;
-    margin-top: 5px;
-    margin-bottom: 8px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: bisque;
+  margin-top: 5px;
+  margin-bottom: 8px;
 }
-
-.rogel,
-.havanette,
-.tiramisu {
-    margin: 13vh 5vh 5vh 5vh;
-    width: 35%;
-    height: 65vh;
-    padding: 5px;
-    border: solid #d03b40 3px;
-    border-radius: 15px;
-    background-color: rgba(94, 94, 92, 0.5);
-    text-align: center;
-    transition: all .2s;
-    overflow: hidden;
+.pasteleria .rogel,
+.pasteleria .havanette,
+.pasteleria .tiramisu {
+  margin: 13vh 5vh 5vh 5vh;
+  width: 35%;
+  height: 55vh;
+  padding: 5px;
+  border: solid #d03b40 3px;
+  border-radius: 15px;
+  background-color: rgba(94, 94, 92, 0.5);
+  text-align: center;
+  transition: all 0.2s;
+  overflow: hidden;
 }
-
-.rogel:hover, .havanette:hover, .tiramisu:hover{
-    transform: scale(1.05);
+.pasteleria img {
+  width: 25vh;
+  height: 30vh;
+  border-radius: 5px 15px;
+  max-width: 100%;
 }
-
-div img {
-    width: 25vh;
-    height: 30vh;
-    border-radius: 5px 15px;
-    max-width: 100%;
+.pasteleria p {
+  font-size: 16px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: antiquewhite;
 }
-
-div p {
-    font-size: 20px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: antiquewhite;
+.pasteleria .rogel:hover, .pasteleria .havanette:hover, .pasteleria .tiramisu:hover {
+  transform: scale(1.05);
 }
-
 
 /* Estilos Contacto ----------------------------------------------- */
-
 .contacto {
-    margin-left: 10px;
-    margin-right: 10px;
-    background-image: url(./imagenes/Fondo1.jpg);
-    background-size: cover;
-    height: calc(100vh - 150px);
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(./imagenes/Fondo1.jpg);
+  background-size: cover;
+  height: calc(100vh - 210px);
 }
-
 .contacto h1 {
-    padding-top: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 42px;
-    color: bisque;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Source Serif Pro", serif;
+  font-size: 42px;
+  color: bisque;
 }
-
-.formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 40px);
-    grid-template-areas:
-    "nombre motivo"
-    "campoNombre selector"
-    "apellido respuesta"
-    "campoApellido respuesta"
-    "email respuesta"
-    "campoEmail enviar";
-    padding: 20px;
-    border: solid #d03b40 3px;
-    border-radius: 15px;
-    background-color: rgba(94, 94, 92, 0.5);
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 22px;
-    color: antiquewhite;
-    width: 70%;
-    margin: 35px auto;
-    height: 60%;
-    overflow: hidden;
+.contacto .formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 40px);
+  grid-template-areas: "nombre motivo" "campoNombre selector" "apellido respuesta" "campoApellido respuesta" "email respuesta" "campoEmail enviar";
+  padding: 20px;
+  border: solid #d03b40 3px;
+  border-radius: 15px;
+  background-color: rgba(94, 94, 92, 0.5);
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
+  color: antiquewhite;
+  width: 70%;
+  margin: 35px auto;
+  height: 60%;
+  overflow: hidden;
 }
-
-.nombre{
-    grid-area: nombre;
+.contacto .nombre {
+  grid-area: nombre;
 }
-
-.campoNombre{
-    grid-area: campoNombre;
+.contacto .campoNombre {
+  grid-area: campoNombre;
 }
-
-.apellido{
-    grid-area: apellido;
+.contacto .apellido {
+  grid-area: apellido;
 }
-
-.campoApellido{
-    grid-area: campoApellido;
+.contacto .campoApellido {
+  grid-area: campoApellido;
 }
-
-.email{
-    grid-area: email;
+.contacto .email {
+  grid-area: email;
 }
-
-.motivo{
-    grid-area: motivo;
+.contacto .motivo {
+  grid-area: motivo;
 }
-
-.campoEmail{
-    grid-area: campoEmail;
+.contacto .campoEmail {
+  grid-area: campoEmail;
 }
-
-.selector {
-    grid-area: selector;
-    width: 100px;
-    height: 30px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 16px;
-    border-radius: 15px;
-    text-align: center;
+.contacto .selector {
+  grid-area: selector;
+  width: 100px;
+  height: 30px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  border-radius: 15px;
+  text-align: center;
 }
-
-.enviar {
-    grid-area: enviar;
-    margin-top: 50px;
-    justify-self: right;
-    height: 30px;
-    color: black;
-    border: solid grey 1px;
-    width: 60px;
-
+.contacto .enviar {
+  grid-area: enviar;
+  margin-top: 50px;
+  justify-self: right;
+  height: 30px;
+  color: black;
+  border: solid grey 1px;
+  width: 60px;
 }
-
-.respuesta {
-    grid-area: respuesta;
-    border-radius: 5px 15px;
-    width: 100%;
-    border: 0;
-    background-color: rgba(197, 202, 159, 0.6);
-    padding: 5px;
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
-    height: 140px;
-    padding-left: 10px;
-    border-right-style: none;
-    margin-top: 10px;
+.contacto .respuesta {
+  grid-area: respuesta;
+  border-radius: 5px 15px;
+  width: 100%;
+  border: 0;
+  background-color: rgba(197, 202, 159, 0.6);
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: aliceblue;
+  height: 140px;
+  padding-left: 10px;
+  border-right-style: none;
+  margin-top: 10px;
 }
-
-.campo {
-    border-radius: 5px 15px;
-    height: 30px;
-    width: 80%;
-    border: 0;
-    background-color: rgba(197, 202, 159, 0.6);
-    padding: 5px;
-    font-size: 18px;
-    padding-left: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
+.contacto .campo {
+  border-radius: 5px 15px;
+  height: 30px;
+  width: 80%;
+  border: 0;
+  background-color: rgba(197, 202, 159, 0.6);
+  padding: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: aliceblue;
 }
-
-.campo:focus,
-.respuesta:focus {
-    outline: none;
+.contacto .campo:focus,
+.contacto .respuesta:focus {
+  outline: none;
 }
-
-::placeholder{
-    color:aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.contacto ::-moz-placeholder {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
+.contacto ::placeholder {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 /* Estilos Footer ----------------------------------------------- */
-
-
 footer {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: #d03b40;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 16px;
-    color: aliceblue;
-    padding-right: 5px;
-    height: 50px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d03b40;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  color: aliceblue;
+  padding-right: 5px;
+  height: 100px;
 }
-
 footer p {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
-
+footer .redes {
+  margin: 10px;
+}
+footer i {
+  margin-left: 15px;
+  font-size: 20px;
+  color: white;
+}
 
 /* Vista Mobile  ----------------------------------------------- */
-
-@media only screen and (max-width: 480px){
-    .navegacion{
-        display: block;
-        height: max-content;
-        text-align: center;
-    }
-
-    .navegacion li{
-        display: block;
-        border-top: solid 1px white;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
-    .logo{
-        width: 150px;
-        display: block;
-        margin: 0 auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .Home{
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 70vh;
-    }
-
-    .Home h1{
-        font-size: 60px;
-        margin: 0 auto;
-        margin-bottom: 150px;
-        text-align: center;
-    }
-
-    footer{
-        font-size: 18px;
-    }
-
-    .pasteleria{
-        flex-wrap: wrap;
-        background-size: cover;
-        height: max-content;
-        justify-content: center;
-    }
-
-    .pasteleria h1{
-        position: relative;
-        font-size: 34px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .rogel,
-    .havanette,
-    .tiramisu {
-        margin-top: 10px;
-        font-size: 20px;
-        width: 70vh;
-        height: max-content;
-        padding: 5px;
-        background-color: rgba(94, 94, 92, 0.5);
-        text-align: center;
+@media only screen and (max-width: 480px) {
+  .Home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+  .Home h1 {
+    font-size: 60px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    text-align: center;
+  }
+  footer {
+    font-size: 18px;
+  }
+  .pasteleria {
+    flex-wrap: wrap;
+    background-size: cover;
+    height: -moz-max-content;
+    height: max-content;
+    justify-content: center;
+  }
+  .pasteleria h1 {
+    position: relative;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .pasteleria .rogel,
+  .pasteleria .havanette,
+  .pasteleria .tiramisu {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 70vh;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 5px;
+    background-color: rgba(94, 94, 92, 0.5);
+    text-align: center;
+  }
+  .pasteleria .rogel p,
+  .pasteleria .havanette p,
+  .pasteleria .tiramisu p {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .contacto {
+    position: relative;
+    height: 875px;
+  }
+  .contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px auto;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .contacto .campo {
+    width: 100%;
+  }
+  .contacto .respuesta {
+    width: 100%;
+  }
 }
-
-    div p{
-        font-size: 20px;
-        margin: 10px;
-    }
-
-    .contacto{
-        position: relative;
-        height: 860px;
-    }
-
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin: 10px auto;
-        height: max-content;
-    }
-
-    .campo{
-        width: 100%
-    }
-
-    .respuesta{
-        width: 100%;
-    }
-}
-
 /* Vista Mediana (Tablets, etc.) ---------------------------- */
-
-@media only screen and (min-width: 481px) and (max-width: 900px){
-
-    .navegacion{
-        display: block;
-        text-align: center;
-        height: max-content;
-    }
-
-    .navegacion li{
-        display: block;
-        border-top: solid 1px white;
-        width: 100%;
-        margin: 0 auto;
-        font-size: 22px;
-    }
-
-    .logo{
-        display: inline;
-        margin: 0 auto;
-        width: 150px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .Home{
-        justify-content: right;
-        height: calc(100vh - 220px);
-        background-position: left;
-    }
-
-
-    .Home h1{
-        font-size: 70px;
-        text-align: right;
-        margin-bottom: 100px;
-        margin-right: 30px;
-    }
-
-    .pasteleria{
-        flex-wrap: wrap;
-        background-size: cover;
-        height: max-content;
-        justify-content: center;
-    }
-
-    .pasteleria h1{
-        position: relative;
-        font-size: 44px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .rogel,
-    .havanette,
-    .tiramisu {
-        margin-top: 10px;
-        font-size: 24px;
-        width: 70vh;
-        height: max-content;
-        padding: 5px;
-        background-color: rgba(94, 94, 92, 0.5);
-        text-align: center;
-}
-
-    div p{
-        font-size: 24px;
-        margin: 10px;
-    }
-
-    .contacto{
-        position: relative;
-        height: 860px;
-    }
-
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin: 10px auto;
-        height: max-content;
-    }
-
-    .campo{
-        width: 100%
-    }
-
-    .respuesta{
-        width: 100%;
-    }
-}
-
-
-
-
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+  .Home {
+    justify-content: right;
+    height: calc(100vh - 180px);
+    background-position: left;
+  }
+  .Home h1 {
+    font-size: 70px;
+    text-align: right;
+    margin-bottom: 100px;
+    margin-right: 30px;
+  }
+  .pasteleria {
+    flex-wrap: wrap;
+    background-size: cover;
+    height: -moz-max-content;
+    height: max-content;
+    justify-content: center;
+  }
+  .pasteleria h1 {
+    position: relative;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .pasteleria h1 .rogel,
+  .pasteleria h1 .havanette,
+  .pasteleria h1 .tiramisu {
+    margin-top: 10px;
+    font-size: 24px;
+    width: 70vh;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 5px;
+    background-color: rgba(94, 94, 92, 0.5);
+    text-align: center;
+  }
+  .pasteleria h1 p {
+    font-size: 24px;
+    margin: 10px;
+  }
+  .contacto {
+    position: relative;
+    height: 875px;
+  }
+  .contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px auto;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .contacto .campo {
+    width: 100%;
+  }
+  .contacto .respuesta {
+    width: 100%;
+  }
+}/*# sourceMappingURL=estilos.css.map */

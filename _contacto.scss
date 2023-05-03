@@ -1,0 +1,130 @@
+/* Estilos Contacto ----------------------------------------------- */
+
+.contacto {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url(./imagenes/Fondo1.jpg);
+    background-size: cover;
+    height: calc(100vh - 210px);
+
+    h1 {
+        padding-top: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 42px;
+        color: $color2;
+    }
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 40px);
+        grid-template-areas:
+        "nombre motivo"
+        "campoNombre selector"
+        "apellido respuesta"
+        "campoApellido respuesta"
+        "email respuesta"
+        "campoEmail enviar";
+        padding: 20px;
+        border: solid $color1 3px;
+        border-radius: 15px;
+        background-color: rgba(94, 94, 92, 0.5);
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 22px;
+        color: $color3;
+        width: 70%;
+        margin: 35px auto;
+        height: 60%;
+        overflow: hidden;
+    }
+
+        .nombre{
+            grid-area: nombre;
+        }
+    
+        .campoNombre{
+            grid-area: campoNombre;
+        }
+    
+        .apellido{
+            grid-area: apellido;
+        }
+    
+        .campoApellido{
+            grid-area: campoApellido;
+        }
+    
+        .email{
+            grid-area: email;
+        }
+    
+        .motivo{
+            grid-area: motivo;
+        }
+    
+        .campoEmail{
+            grid-area: campoEmail;
+        }
+    
+        .selector {
+            grid-area: selector;
+            width: 100px;
+            height: 30px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 16px;
+            border-radius: 15px;
+            text-align: center;
+        }
+    
+        .enviar {
+            grid-area: enviar;
+            margin-top: 50px;
+            justify-self: right;
+            height: 30px;
+            color: black;
+            border: solid grey 1px;
+            width: 60px;
+    
+        }
+    
+        .respuesta {
+            grid-area: respuesta;
+            border-radius: 5px 15px;
+            width: 100%;
+            border: 0;
+            background-color: rgba(197, 202, 159, 0.6);
+            padding: 5px;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            height: 140px;
+            padding-left: 10px;
+            border-right-style: none;
+            margin-top: 10px;
+        }
+    
+        .campo {
+            border-radius: 5px 15px;
+            height: 30px;
+            width: 80%;
+            border: 0;
+            background-color: rgba(197, 202, 159, 0.6);
+            padding: 5px;
+            font-size: 18px;
+            padding-left: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+        }
+    
+        .campo:focus,
+        .respuesta:focus {
+            outline: none;
+        }
+    
+        ::placeholder{
+            color:aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+}

@@ -1,0 +1,43 @@
+/* Estilos Header -------------------------------------------- */
+
+.navbar {
+    background-color: $color1 !important;
+    margin: 10px;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+    border-radius: 0px;
+}
+
+#navbarNavAltMarkup{
+    justify-content: right;
+}
+
+.navegacion .secciones {
+    text-align: center;
+
+    .titulo{
+        font-family: 'Open Sans Condensed', sans serif;
+        font-size: 24px;
+        color: $color3;
+        justify-content: right;
+    }
+}
+
+.hamburguesa{
+    border-radius: 0px;
+    line-height: 0px;
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+#menuBurguer {
+    color: white;
+}
+
+

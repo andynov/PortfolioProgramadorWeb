@@ -1,0 +1,21 @@
+/* Estilos Home -------------------------------------------- */
+
+.Home {
+    margin: 10px;
+    display: flex;
+    justify-content: right;
+    background-image: url(./imagenes/Fondo2.jpg);
+    background-size: cover;
+    height: calc(100vh - 210px);
+    overflow: hidden;
+
+    h1 {
+        display: block;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 80px;
+        color: $color2;
+        margin-top: 26%;
+        margin-right: 10%;
+        align-self: flex-end;
+    }
+}

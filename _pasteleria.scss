@@ -1,0 +1,59 @@
+/* Estilos Pasteleria ----------------------------------------------*/
+
+.pasteleria {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background-image: url(imagenes/Fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 210px);
+
+    h1 {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 42px;
+        color: $color2;
+    }
+
+    h2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: $color2;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    .rogel,
+    .havanette,
+    .tiramisu {
+        margin: 13vh 5vh 5vh 5vh;
+        width: 35%;
+        height: 55vh;
+        padding: 5px;
+        border: solid $color1 3px;
+        border-radius: 15px;
+        background-color: rgba(94, 94, 92, 0.5);
+        text-align: center;
+        transition: all .2s;
+        overflow: hidden;
+    }
+
+    	img {
+        width: 25vh;
+        height: 30vh;
+        border-radius: 5px 15px;
+        max-width: 100%;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: $color3;
+        }
+
+    .rogel:hover, .havanette:hover, .tiramisu:hover{
+        transform: scale(1.05);
+    }
+}
