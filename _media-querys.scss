@@ -101,29 +101,27 @@
         
         h1{
             position: relative;
-            font-size: 44px;
+            font-size: 60px;
             text-align: center;
             margin-bottom: 10px;
+        }
 
-
-        .rogel,
-        .havanette,
-        .tiramisu {
+        .rogel, .havanette, .tiramisu {
             margin-top: 10px;
-            font-size: 24px;
-            width: 70vh;
+            font-size: 30px;
+            width: 90vh;
             height: max-content;
             padding: 5px;
             background-color: rgba(94, 94, 92, 0.5);
             text-align: center;
         }
-
-            p{
+                p{
                 font-size: 24px;
                 margin: 10px;
-            }
-    }        
-}
+        }
+    }
+       
+
 
 
     .contacto{

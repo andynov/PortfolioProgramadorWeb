@@ -346,23 +346,21 @@ footer i {
   }
   .pasteleria h1 {
     position: relative;
-    font-size: 44px;
+    font-size: 60px;
     text-align: center;
     margin-bottom: 10px;
   }
-  .pasteleria h1 .rogel,
-  .pasteleria h1 .havanette,
-  .pasteleria h1 .tiramisu {
+  .pasteleria .rogel, .pasteleria .havanette, .pasteleria .tiramisu {
     margin-top: 10px;
-    font-size: 24px;
-    width: 70vh;
+    font-size: 30px;
+    width: 90vh;
     height: -moz-max-content;
     height: max-content;
     padding: 5px;
     background-color: rgba(94, 94, 92, 0.5);
     text-align: center;
   }
-  .pasteleria h1 p {
+  .pasteleria p {
     font-size: 24px;
     margin: 10px;
   }
