@@ -55,7 +55,7 @@
   justify-content: right;
   background-image: url(./imagenes/Fondo2.jpg);
   background-size: cover;
-  height: calc(100vh - 210px);
+  height: calc(100vh - 212px);
   overflow: hidden;
 }
 .Home h1 {
@@ -76,7 +76,7 @@
   background-image: linear-gradient(rgba(1, 0, 0, 0.356), rgba(0, 0, 0, 0.74)), url(imagenes/Fondo3.jpg);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 210px);
+  height: calc(100vh - 212px);
 }
 .cafes h1 {
   position: absolute;
@@ -128,7 +128,7 @@
   background-image: url(imagenes/Fondo1.jpg);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 210px);
+  height: calc(100vh - 212px);
 }
 .pasteleria h1 {
   position: absolute;
@@ -181,7 +181,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.562)), url(imagenes/fondo4.jpg);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 210px);
+  height: calc(100vh - 212px);
 }
 .licuados h1 {
   position: absolute;
@@ -230,7 +230,7 @@
   margin-right: 10px;
   background-image: url(./imagenes/Fondo1.jpg);
   background-size: cover;
-  height: calc(100vh - 210px);
+  height: calc(100vh - 212px);
 }
 .contacto h1 {
   padding-top: 10px;
